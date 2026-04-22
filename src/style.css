@@ -899,6 +899,25 @@ header.hidden {
 
   .why-item {
     padding: 2rem 1.5rem;
+    min-height: auto;
+  }
+
+  .rival-section h2 {
+    font-size: 1.6rem !important;
+  }
+
+  .rival-section p {
+    font-size: 1rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .trust-item {
+    font-size: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .trust-item i {
+    font-size: 1.2rem;
   }
 }
 
