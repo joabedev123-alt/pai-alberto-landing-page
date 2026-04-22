@@ -357,8 +357,8 @@ header.hidden {
 /* --- Authority Section --- */
 .video-presentation-grid {
   display: grid;
-  grid-template-columns: 1fr 450px;
-  gap: 5rem;
+  grid-template-columns: 1fr 380px;
+  gap: 4rem;
   align-items: center;
 }
 
@@ -390,7 +390,7 @@ header.hidden {
 }
 
 .small-video {
-  max-width: 500px;
+  max-width: 380px;
 }
 
 .video-presentation-wrapper:hover {
