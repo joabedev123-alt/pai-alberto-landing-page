@@ -631,80 +631,107 @@ header.hidden {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 3rem;
+  .container {
+    padding: 0 1.5rem;
   }
 
-  .hero-text {
-    margin: 0 auto;
-  }
-
-  .hero-video-moldura {
-    margin: 0 auto;
-    max-width: 300px;
+  .section-padding {
+    padding: 40px 0;
   }
 
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   header {
-    padding: 1rem 0;
+    padding: 0.8rem 0;
   }
 
   .hero {
-    padding-top: 160px;
-    align-items: flex-start;
+    padding-top: 140px;
+    min-height: auto;
+    padding-bottom: 3rem;
   }
 
   .hero h1 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
   }
 
   .btn-primary {
-    padding: 1rem 2rem;
-    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-comparison {
+    margin-top: 2rem;
+    flex-direction: row;
+    gap: 0.3rem;
+    max-width: 100%;
+  }
+
+  .comparison-card {
+    aspect-ratio: 1/1.3;
+  }
+
+  .comparison-overlay span {
+    font-size: 0.6rem;
+  }
+
+  .comparison-x {
+    font-size: 1.2rem;
   }
 
   .video-presentation-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
     text-align: center;
-    gap: 2.5rem;
   }
 
-  .video-text h2, .video-text p {
+  .video-text h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .video-text p {
+    font-size: 1rem;
     text-align: center;
   }
 
   .small-video {
     max-width: 100%;
-    margin: 0 auto;
   }
 
-  .hero-comparison {
-    margin: 2rem auto 0;
-    gap: 0.4rem;
-    max-width: 100%;
+  #depoimentos h2 {
+    white-space: normal !important;
   }
 
-  .comparison-x {
-    font-size: 1.5rem;
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
   }
 
-  .comparison-overlay span {
-    font-size: 0.65rem;
-    letter-spacing: 0.5px;
+  .stats {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
   }
 
-  .section-padding { padding: 50px 0; }
-  
+  .stat-item {
+    width: 100%;
+  }
+
   .carousel-slide {
-    width: 240px;
-    height: 320px;
+    width: 220px;
+    height: 300px;
   }
 }
 
