@@ -3,12 +3,12 @@
 :root {
   --bg-deep: #0a0a0a;
   --bg-graphite: #1a1a1a;
-  --accent-bronze: #d9914b;
-  --accent-gold: #d4b06d;
+  --accent-bronze: #f5a65b; /* Brilho aumentado */
+  --accent-gold: #ffdf9e;    /* Brilho aumentado */
   --text-primary: #ffffff;
-  --text-secondary: #d1d1d1;
+  --text-secondary: #e5e5e5; /* Mais claro */
   --glass-bg: rgba(255, 255, 255, 0.05);
-  --glass-border: rgba(205, 127, 50, 0.3);
+  --glass-border: rgba(205, 127, 50, 0.35);
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,6 +49,14 @@ h1, h2, h3, h4 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #fff 0%, var(--accent-gold) 50%, var(--accent-bronze) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(212, 176, 109, 0.3));
 }
 
 /* --- Utility Classes --- */
