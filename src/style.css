@@ -457,7 +457,7 @@ header.hidden {
 .carousel-track {
   display: flex;
   width: max-content;
-  animation: scroll-carousel 40s linear infinite;
+  animation: scroll-carousel 60s linear infinite;
   gap: 20px;
 }
 
@@ -488,7 +488,7 @@ header.hidden {
 }
 
 .track-2 {
-  animation: scroll-carousel-2 35s linear infinite !important;
+  animation: scroll-carousel-2 55s linear infinite !important;
 }
 
 @keyframes scroll-carousel-2 {
