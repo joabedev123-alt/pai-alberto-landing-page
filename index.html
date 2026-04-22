@@ -74,36 +74,39 @@
     <!-- AUTHORITY -->
     <section id="quem-sou" class="authority section-padding">
         <div class="container">
-            <div class="authority-grid">
-                <div class="authority-image" data-reveal>
-                    <video id="authVideo" autoplay muted loop playsinline>
-                        <source src="/quemsomos.mp4" type="video/mp4">
-                        Seu navegador não suporta vídeos.
-                    </video>
-                    <div class="video-controls">
-                        <button id="playPauseBtn"><i class="ph ph-pause"></i></button>
-                        <button id="volumeBtn"><i class="ph ph-speaker-slash"></i></button>
+            <div class="authority-content" style="max-width: 900px; margin: 0 auto; text-align: center;" data-reveal>
+                <h2 class="text-gradient">Quem é Pai Alberto</h2>
+                <p>Especialista em trabalhos espirituais, amarrações amorosas e rituais de reconexão, com anos de experiência ajudando pessoas em todo o Brasil.</p>
+                <p>Meu compromisso é com a verdade e com a restauração da harmonia espiritual nos relacionamentos. Através de rituais milenares, abrimos caminhos que pareciam fechados.</p>
+                
+                <div class="stats" id="stats-section">
+                    <div class="stat-item">
+                        <div class="stat-number" id="count-atendimentos">20000+</div>
+                        <div class="stat-label">Atendimentos</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Sigilo Total</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="count-anos">25+</div>
+                        <div class="stat-label">Anos de Experiência</div>
                     </div>
                 </div>
-                <div class="authority-content" data-reveal>
-                    <h2 class="text-gradient">Quem é Pai Alberto</h2>
-                    <p>Especialista em trabalhos espirituais, amarrações amorosas e rituais de reconexão, com anos de experiência ajudando pessoas em todo o Brasil.</p>
-                    <p>Meu compromisso é com a verdade e com a restauração da harmonia espiritual nos relacionamentos. Através de rituais milenares, abrimos caminhos que pareciam fechados.</p>
-                    
-                    <div class="stats">
-                        <div class="stat-item">
-                            <h4 id="count-atendimentos">0</h4>
-                            <p>Atendimentos</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4>100%</h4>
-                            <p>Sigilo Total</p>
-                        </div>
-                        <div class="stat-item">
-                            <h4 id="count-anos">0</h4>
-                            <p>Anos de Experiência</p>
-                        </div>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW VIDEO SECTION -->
+    <section class="video-presentation section-padding" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <div class="video-presentation-wrapper" data-reveal>
+                <video id="authVideo" poster="/poster.png" loop playsinline>
+                    <source src="/quemsomos.mp4" type="video/mp4">
+                </video>
+                <div class="video-controls">
+                    <button id="playPauseBtn"><i class="ph ph-play"></i></button>
+                    <button id="volumeBtn"><i class="ph ph-speaker-slash"></i></button>
                 </div>
             </div>
         </div>
