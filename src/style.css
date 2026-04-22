@@ -117,21 +117,7 @@ h1, h2, h3, h4 {
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  .btn-cta-footer {
-    font-size: 0.9rem;
-    padding: 1rem 1.5rem;
-    gap: 8px;
-    width: auto;
-    min-width: 280px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-  
-  .btn-cta-footer i {
-    font-size: 1.5rem;
-  }
-}
+
 
 .btn-primary:hover {
   transform: scale(1.05);
@@ -699,8 +685,22 @@ header.hidden {
     width: auto;
     max-width: 100%;
     justify-content: center;
-    white-space: normal; /* Permitir quebra se necessário, mas manter ícone junto */
+    white-space: normal;
     text-align: center;
+  }
+
+  .btn-cta-footer {
+    font-size: 0.8rem !important;
+    padding: 0.8rem 1.2rem !important;
+    gap: 6px !important;
+    width: auto !important;
+    min-width: 240px !important;
+    white-space: nowrap !important;
+    margin: 0 auto;
+  }
+
+  .btn-cta-footer i {
+    font-size: 1.2rem !important;
   }
 
   .hero-comparison {
