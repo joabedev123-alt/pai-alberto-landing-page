@@ -280,30 +280,65 @@ header.hidden {
   margin-bottom: 2.5rem;
 }
 
-.hero-video-moldura {
-  position: relative;
+.hero-comparison {
+  display: flex;
+  gap: 1.5rem;
   width: 100%;
-  max-width: 450px;
-  max-height: 75vh;
-  border-radius: 30px;
-  padding: 10px;
-  background: linear-gradient(135deg, var(--accent-bronze), var(--accent-gold));
-  box-shadow: 0 0 50px rgba(205, 127, 50, 0.4);
-  transform: rotate(1deg);
-  transition: var(--transition);
+  max-width: 600px;
+}
+
+.comparison-card {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 4/5;
+  border-radius: 20px;
   overflow: hidden;
+  border: 2px solid var(--glass-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: var(--transition);
 }
 
-.hero-video-moldura:hover {
-  transform: rotate(0deg) scale(1.02);
-}
-
-.hero-video-moldura video {
+.comparison-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 20px;
-  display: block;
+}
+
+.comparison-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  text-align: center;
+}
+
+.comparison-overlay span {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.comparison-card.before {
+  transform: rotate(-2deg);
+}
+
+.comparison-card.after {
+  transform: rotate(2deg);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 40px rgba(212, 176, 109, 0.3);
+}
+
+.comparison-card.after .comparison-overlay span {
+  color: var(--accent-gold);
+}
+
+.comparison-card:hover {
+  transform: translateY(-10px) rotate(0deg) scale(1.05);
+  z-index: 20;
 }
 
 /* --- Authority Section --- */
@@ -594,9 +629,14 @@ header.hidden {
     font-size: 1rem;
   }
 
-  .hero-video-moldura {
+  .hero-comparison {
     margin: 2rem auto 0;
-    max-width: 260px;
+    gap: 1rem;
+    max-width: 450px;
+  }
+
+  .comparison-overlay span {
+    font-size: 0.75rem;
   }
 
   .authority-grid { grid-template-columns: 1fr; gap: 3rem; }
