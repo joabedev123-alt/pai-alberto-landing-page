@@ -161,8 +161,43 @@ header.hidden {
   color: var(--accent-gold);
 }
 
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
 @media (max-width: 768px) {
-  .nav-links { display: none; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--glass-border);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .header-cta {
+    display: none;
+  }
 }
 
 /* --- Hero Section --- */
@@ -537,6 +572,11 @@ header.hidden {
   .authority-grid { grid-template-columns: 1fr; gap: 3rem; }
   .stats { flex-wrap: wrap; gap: 2rem; }
   .section-padding { padding: 60px 0; }
+  
+  .carousel-slide {
+    width: 260px;
+    height: 350px;
+  }
 }
 
 /* --- Animations --- */

@@ -53,13 +53,35 @@ if (statsSection) statsObserver.observe(statsSection);
 
 // --- Header Logic ---
 const header = document.getElementById('mainHeader');
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.querySelector('.nav-links');
 let lastScroll = 0;
+
+if (mobileMenuBtn) {
+  mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    const icon = mobileMenuBtn.querySelector('i');
+    icon.classList.toggle('ph-list');
+    icon.classList.toggle('ph-x');
+  });
+}
+
+// Close menu when clicking a link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('active');
+    const icon = mobileMenuBtn.querySelector('i');
+    icon.classList.add('ph-list');
+    icon.classList.remove('ph-x');
+  });
+});
 
 window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
 
   if (currentScroll > 50) {
     header.classList.add('hidden');
+    navLinks.classList.remove('active'); // Close menu on scroll
   } else {
     header.classList.remove('hidden');
   }
