@@ -566,19 +566,32 @@ header.hidden {
     max-width: 300px;
   }
 
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  header {
+    padding: 1rem 0;
+  }
+
   .hero {
-    padding-top: 140px;
+    padding-top: 160px;
+    align-items: flex-start;
   }
 
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 1.7rem;
     line-height: 1.2;
     margin-bottom: 1.5rem;
   }
 
+  .hero p {
+    font-size: 1rem;
+  }
+
   .hero-video-moldura {
     margin: 2rem auto 0;
-    max-width: 280px;
+    max-width: 260px;
   }
 
   .authority-grid { grid-template-columns: 1fr; gap: 3rem; }
