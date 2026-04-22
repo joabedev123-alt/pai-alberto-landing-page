@@ -373,6 +373,73 @@ header.hidden {
   z-index: 20;
 }
 
+/* --- Why Choose Section --- */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.why-item {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+}
+
+.why-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background: rgba(212, 176, 109, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(212, 176, 109, 0.2);
+  transition: var(--transition);
+}
+
+.why-item i {
+  font-size: 2.5rem;
+  color: var(--accent-gold);
+}
+
+.why-item h3 {
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+/* Featured Item */
+.featured-why {
+  border: 2px solid var(--accent-gold) !important;
+  box-shadow: 0 0 30px rgba(212, 176, 109, 0.2);
+  background: linear-gradient(135deg, rgba(212, 176, 109, 0.1), rgba(0,0,0,0.4));
+}
+
+.featured-why .why-icon-wrapper {
+  background: var(--accent-gold);
+  color: #000;
+  box-shadow: 0 0 20px rgba(212, 176, 109, 0.4);
+}
+
+.featured-why i {
+  color: #000;
+}
+
+.why-tag {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 /* --- Authority Section --- */
 .video-presentation-grid {
   display: grid;
