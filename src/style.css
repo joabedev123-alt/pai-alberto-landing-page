@@ -782,38 +782,15 @@ header.hidden {
   }
 
   .hero-content {
-    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
     text-align: center;
-    gap: 2rem;
-  }
-
-  .hero-text {
-    max-width: 100%;
-    align-items: center;
-  }
-
-  .hero {
-    padding-top: 120px;
-    padding-bottom: 2rem;
-    min-height: auto;
-    display: block;
-  }
-
-  .hero h1 {
-    font-size: 1.4rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
+    gap: 1.5rem;
   }
 
   .hero-comparison {
-    margin: 2rem auto 0;
+    order: 1 !important;
+    margin: 0 auto 1rem !important;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -821,19 +798,40 @@ header.hidden {
     gap: 0.5rem;
   }
 
+  .hero-text {
+    order: 2 !important;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    padding-top: 110px;
+    padding-bottom: 2rem;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
   .comparison-card {
     flex: 1;
     aspect-ratio: 3/4;
-    border-radius: 15px;
+    border-radius: 12px;
   }
 
   .comparison-x {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0 5px;
-  }
-
-  .comparison-overlay span {
-    font-size: 0.6rem;
   }
 
   .btn-primary {
