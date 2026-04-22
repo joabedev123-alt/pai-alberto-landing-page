@@ -763,6 +763,15 @@ header.hidden {
     width: 220px;
     height: 300px;
   }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .why-item {
+    padding: 2rem 1.5rem;
+  }
 }
 
 /* --- Animations --- */
