@@ -381,6 +381,54 @@ header.hidden {
   z-index: 20;
 }
 
+/* --- Trust Banner --- */
+.trust-banner {
+  background: linear-gradient(to right, rgba(205, 127, 50, 0.1), rgba(0,0,0,0.8));
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--glass-border);
+  border-bottom: 1px solid var(--glass-border);
+  margin-top: 2rem;
+}
+
+.trust-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--accent-gold);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.trust-item i {
+  font-size: 1.5rem;
+}
+
+.trust-divider {
+  width: 1px;
+  height: 30px;
+  background: var(--glass-border);
+}
+
+@media (max-width: 768px) {
+  .trust-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .trust-divider {
+    display: none;
+  }
+}
+
 /* --- Why Choose Section --- */
 .why-grid {
   display: grid;
