@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500&family=Cinzel+Decorative:wght@700&display=swap');
 
 :root {
-  --bg-deep: #050505;
-  --bg-graphite: #121212;
-  --accent-bronze: #cd7f32;
-  --accent-gold: #c5a059;
-  --text-primary: #f0f0f0;
-  --text-secondary: #a0a0a0;
-  --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(205, 127, 50, 0.2);
+  --bg-deep: #0a0a0a;
+  --bg-graphite: #1a1a1a;
+  --accent-bronze: #d9914b;
+  --accent-gold: #d4b06d;
+  --text-primary: #ffffff;
+  --text-secondary: #d1d1d1;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(205, 127, 50, 0.3);
   --font-heading: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
