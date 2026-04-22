@@ -862,10 +862,6 @@ header.hidden {
     gap: 2rem;
     text-align: center;
   }
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
 
   .video-text h2 {
     font-size: 1.8rem;
