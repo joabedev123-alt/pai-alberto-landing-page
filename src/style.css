@@ -110,6 +110,16 @@ h1, h2, h3, h4 {
   border: none;
   cursor: pointer;
   line-height: 1.2;
+  transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+  .btn-primary {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 .btn-cta-footer {
@@ -232,6 +242,10 @@ header.hidden {
   .header-cta {
     display: none;
   }
+  
+  header {
+    padding: 1rem 0;
+  }
 }
 
 /* --- Hero Section --- */
@@ -245,36 +259,7 @@ header.hidden {
   padding-bottom: 50px;
 }
 
-.hero-symbols {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 1;
-  overflow: hidden;
-}
 
-.symbol {
-  position: absolute;
-  color: var(--accent-gold);
-  opacity: 0.25;
-  font-size: 15rem;
-  filter: blur(1px) drop-shadow(0 0 20px rgba(205, 127, 50, 0.3));
-  animation: float-symbol 20s linear infinite;
-}
-
-.symbol-1 { top: 10%; left: 5%; animation-duration: 25s; }
-.symbol-2 { bottom: 10%; right: 5%; animation-duration: 30s; font-size: 12rem; }
-.symbol-3 { top: 40%; right: 15%; animation-duration: 35s; font-size: 18rem; opacity: 0.1; }
-
-@keyframes float-symbol {
-  0% { transform: translate(0, 0) rotate(0deg) scale(1); }
-  33% { transform: translate(30px, 50px) rotate(120deg) scale(1.1); }
-  66% { transform: translate(-20px, 20px) rotate(240deg) scale(0.9); }
-  100% { transform: translate(0, 0) rotate(360deg) scale(1); }
-}
 
 .hero-content {
   position: relative;
@@ -694,6 +679,7 @@ header.hidden {
   border-radius: 15px;
   overflow: hidden;
   border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .carousel-slide img,
@@ -830,8 +816,9 @@ header.hidden {
   }
 
   .hero p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 1.5rem;
+    padding: 0 1rem;
   }
 
   .comparison-card {
@@ -856,10 +843,11 @@ header.hidden {
   }
 
   .btn-cta-footer {
-    font-size: 0.85rem !important;
-    padding: 0.8rem 1.5rem !important;
-    gap: 8px !important;
-    width: auto !important;
+    font-size: 0.9rem !important;
+    padding: 1rem 1.5rem !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 320px !important;
     min-width: unset !important;
     flex-direction: row !important;
   }
@@ -942,7 +930,7 @@ header.hidden {
 
   .logo {
     font-size: 1.1rem;
-    max-width: 130px;
+    width: max-content;
   }
 
   .mobile-only {

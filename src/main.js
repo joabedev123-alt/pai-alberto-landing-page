@@ -68,7 +68,11 @@ window.addEventListener('scroll', () => {
   const currentScroll = window.scrollY;
 
   if (currentScroll > 50) {
-    header.classList.add('hidden');
+    if (currentScroll > lastScroll) {
+      header.classList.add('hidden'); // Scrolling down
+    } else {
+      header.classList.remove('hidden'); // Scrolling up
+    }
     navLinks.classList.remove('active'); // Close menu on scroll
   } else {
     header.classList.remove('hidden');
@@ -149,6 +153,16 @@ const closeLightbox = () => {
 if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
 if (lightbox) lightbox.addEventListener('click', (e) => {
   if (e.target !== lightboxImg) closeLightbox();
+});
+
+// --- Testimonial Videos Autoplay Fix ---
+window.addEventListener('load', () => {
+  const testimonialVideos = document.querySelectorAll('.carousel-slide video');
+  testimonialVideos.forEach(video => {
+    video.play().catch(error => {
+      console.log("Autoplay prevented for testimonial video, user interaction might be needed:", error);
+    });
+  });
 });
 
 console.log('Pai Alberto de Oxalá Vidência & Magia Landing Page Loaded Successfully');
