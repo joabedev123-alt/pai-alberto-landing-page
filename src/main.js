@@ -36,20 +36,8 @@ function animateValue(obj, start, end, duration) {
   window.requestAnimationFrame(step);
 }
 
-const statsSection = document.querySelector('.stats');
-const statsObserver = new IntersectionObserver((entries) => {
-  if (entries[0].isIntersecting) {
-    const atendimentos = document.getElementById('count-atendimentos');
-    const anos = document.getElementById('count-anos');
-    
-    if (atendimentos) animateValue(atendimentos, 0, 20000, 2000);
-    if (anos) animateValue(anos, 0, 25, 2000);
-    
-    statsObserver.unobserve(statsSection);
-  }
-}, { threshold: 0.5 });
+// Counters logic simplified (if needed in future)
 
-if (statsSection) statsObserver.observe(statsSection);
 
 // --- Header Logic ---
 const header = document.getElementById('mainHeader');
@@ -163,4 +151,4 @@ if (lightbox) lightbox.addEventListener('click', (e) => {
   if (e.target !== lightboxImg) closeLightbox();
 });
 
-console.log('Pai Alberto Landing Page Loaded Successfully');
+console.log('Pai Alberto de Oxalá Vidência & Magia Landing Page Loaded Successfully');
